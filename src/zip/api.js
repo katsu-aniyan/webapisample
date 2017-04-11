@@ -8,7 +8,7 @@ $(function(){
 		console.log('click btn');
 		$.ajax({
 			url: 'http://zipcloud.ibsnet.co.jp/api/search?zipcode=2500011',
-			dataType: "json",
+			dataType: "jsonp",
 			data : send_data,
 			success: function(res){
 				if(res.result === 'OK') {
